@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "esnext",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "strict": true,
+        "watch": false,
+        "incremental": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false
+    },
+    "exclude": ["node_modules"]
+}
