@@ -13,7 +13,7 @@ export class Book {
     @Column({ type: "varchar", length: 255 })
     public cover_image_url: string;
 
-    @Column({ type: "uniqueidentifier" })
+    @Column({ type: "uniqueidentifier", nullable: true })
     public audio_file_key: string | null;
 
     @OneToMany(() => Turn, (t) => t.book)

@@ -10,11 +10,8 @@ export class Turn {
     @Column({ type: "int" })
     public book_id: number;
 
-    @Column({ type: "tinyint" })
-    public sort_order: number;
-
-    @Column({ type: "uniqueidentifier" })
-    public audio_file_key: string;
+    @Column({ type: "int" })
+    public time: number;
 
     @ManyToOne(() => Book, (b) => b.turns)
     @JoinColumn({ name: "book_id" })
